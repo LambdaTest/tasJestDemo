@@ -44,3 +44,9 @@ test('adding should should detect odd number--', () => {
     const result = number % 2;
     expect(result).toBe(1);
 });
+
+test('[Flaky] adding should should detect odd number--', () => {
+    const number = Math.floor(Math.random() * 10);
+    const result = number % 3;
+    expect(result).toBe(1);
+});
